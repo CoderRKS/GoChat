@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <link rel="icon" type="image/x-icon" href="icon.jpg">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <title>GoChat-Room</title>
+</head>
+
+<body>
+    <div class="card">
+        <button onclick="logout()" id="logout" class="glyphicon glyphicon-log-out btn btn-danger"><b>Logout</b></button>
+        <h1 class="welcome_text" id="user_name" onload="loadwelcom()">Welcome</h1>
+        <h3>Creat or Join a <b>Chat Room</b> for chatting</h3>
+        <div>
+            <p>Add Room:</p>
+            <input type="text" id="room_name" class="form-control" placeholder="Room">
+        </div>
+        <button onclick="add_room()" id="login_button" class="custom-btn btn-3"><span>Join</span></button>
+    </div>
+    <script src="main2.js"></script>
+</body>
+
+</html>

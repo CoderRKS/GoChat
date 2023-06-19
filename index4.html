@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style4.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="image1.jpg">
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <title>Gochat-ChatSpace</title>
+</head>
+
+<body>
+    <div class="name_tag" id="name_tag">
+        <div class="blackcontain">
+            <span class="name" id="name_name" onload="text_call()">Name: </span>
+            <button onclick="logout()" id="logout" class="button_logout"></button>
+            <button class="btn_delete" id="btn_delete" onclick="delet()"></button>
+        </div>
+    </div>
+    <div class="space"></div>
+    <div id="output" style="text-align: left;margin-bottom: 70px;"></div>
+    <div class="contain">
+        <div class="time_text">
+            <p id="timetext"></p>
+        </div>
+        <input type="text" id="msg" class="input_msg" placeholder="Message">
+        <button onclick="send()" class="buttonsend"></button>
+    </div>
+    <audio src="music2.mp3" id="sendsound"></audio>
+    <audio src="music1.mp3" id="deletesound"></audio>
+    <audio src="music3.mp3" id="playsound"></audio>
+</body>
+<script src="main4.js"></script>
+</html>

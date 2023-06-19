@@ -1,0 +1,49 @@
+html,
+body {
+    background: linear-gradient(45deg, blue, cyan);
+    background-repeat: no-repeat;
+    background-size: 100% 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    animation-name: welcome;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes welcome{
+    0%{
+        opacity:0.2;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.logo{
+    background-image: url("logo3.png");
+    height: 270px;
+    width: 270px;
+    margin: auto;
+    background-size: cover;
+    margin-top: 220px;
+    animation-name: zoom;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+
+@keyframes zoom{
+    0%{
+        width: 270px;
+        height: 270px;
+    }
+
+    100%{
+        width: 290px;
+        height: 290px;
+    }
+}
+

@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+
+html,
+body {
+    background: blue;
+    background-size: 100% 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    animation-name: welcome;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes welcome{
+    0%{
+        opacity:0.5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.loading{
+    height: 270px;
+    width: 100%;
+    font-size:40px;
+    font-family: 'Kalam', cursive;
+    color: white;
+    margin-top: 320px;
+}
+

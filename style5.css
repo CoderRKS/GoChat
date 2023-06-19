@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+
+html,
+body {
+    background: rgb(0, 0, 189);
+    background-size: 100% 100vh;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    overflow: hidden;
+    animation-name: welcome;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes welcome{
+    0%{
+        opacity:0.5;
+    }
+
+    100%{
+        opacity: 1;
+    }
+}
+
+.img{
+    height: 220px;
+    margin-top: 160px;
+    width: 220px;
+    background-image: url("image7.gif");
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bye{
+    height: 270px;
+    width: 90%;
+    margin: auto;
+    font-size:40px;
+    font-family: 'Kalam', cursive;
+    color: white;
+    margin-top: 30px;
+}
+

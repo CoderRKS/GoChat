@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@800&display=swap');
+
+
+html {
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    border: 0;
+    margin-right: 10px;
+    background-color: black;
+}
+
+::-webkit-scrollbar-track {
+    border: 0;
+    margin-right: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(cyan, blue);
+    border-radius: 5px 5px 5px 5px;
+    transition: 1s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    box-shadow: 5px 5px 15px white,
+        -5px -5px 15px white,
+        -5px 5px 15px white,
+        5px -5px 15px white;
+}
+
+body {
+    background-image: url("image3.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 0;
+    margin: 0;
+    animation: bg_animate 10s infinite;
+}
+
+@keyframes bg_animate {
+    0% {
+        background-size: 105% 100%;
+    }
+
+    50% {
+        background-size: 100% 100%;
+    }
+
+    100% {
+        background-size: 105% 100%;
+    }
+}
+
+@keyframes open {
+    0% {
+        height: 90px;
+    }
+
+    100% {
+        height: 700px;
+    }
+}
+
+.time_text {
+    width: 160px;
+    height: 30px;
+    display: inline;
+    border: 2px solid cyan;
+    border-radius: 7px 7px 7px 7px;
+    border-width: 2px;
+    border-color: aqua;
+    font-family: 'Dosis', sans-serif;
+    color: aqua;
+    text-decoration: solid;
+    text-align: center;
+    font-size: 18px;
+    margin-left: 5px;
+    background-color: black;
+}
+
+#timetext {
+    margin-top: 0px;
+}
+
+.input_msg {
+    width: 100%;
+    height: 25px;
+    display: inline;
+    margin-left: 0;
+    border-radius: 7px 7px 7px 7px;
+    border-width: 2px;
+    border-color: aqua;
+    font-family: 'Comic Neue', cursive;
+    color: white;
+    text-decoration: solid;
+    text-align: center;
+    font-size: 15px;
+    margin-left: 5px;
+    background:linear-gradient(90deg,blue, black,black,black,black,black,black, blue);
+}
+
+.buttonsend {
+    width: 35px;
+    height: 32px;
+    float: right;
+    background-image: url("image6.png");
+    background-size: 100% 100%;
+    text-align: center;
+    background-repeat: no-repeat;
+    margin-left: 5px;
+    margin-right: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.contain {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 25px;
+    position: absolute;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 0px 0px 0px 0px;
+    padding-top: 3px;
+    padding-bottom: 3px;
+}
+
+.name_tag {
+    display: flex;
+    letter-spacing: 0.1rem;
+    transition: all 0.5s ease;
+    font-size: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    width: 100.2%;
+    margin: 0;
+    padding: 0;
+    border-radius: 10px 10px 0px 0px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.name {
+    margin: 1.5px;
+    margin-left: 10px;
+    float: left;
+}
+
+.blackcontain {
+    background:linear-gradient(90deg,black,black,black,black,black,black, blue);
+    color: white;
+    height: 34px;
+    width: 100%;
+    margin-bottom: 20px;
+    position: fixed;
+    border: 2px solid white;
+    margin: 0;
+}
+
+.bold_name {
+    font-family: 'Dosis', sans-serif;
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+}
+
+.message_text {
+    color: lightgray;
+    font-family: 'Comic Neue', cursive;
+    margin-left: 15px;
+    width: 80%;
+    margin-right: 15px;
+}
+
+.username {
+    font-family: 'Dosis', sans-serif;
+    font-size: 20px;
+    letter-spacing: 0.1px;
+    color: cyan;
+}
+
+.btn_delete {
+    width: 34px;
+    height: 100%;
+    float: right;
+    background-image: url("image4.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    border: 2px solid white;
+    border-left: 4px solid white;
+    cursor: pointer;
+}
+
+#logout {
+    width: 34px;
+    height: 100%;
+    border: 2px solid white;
+    float: right;
+    background-image: url("image5.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: red;
+    cursor: pointer;
+}
+
+.space{
+    height: 34px;
+    width: 100%;
+}

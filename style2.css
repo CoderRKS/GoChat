@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Chathura:wght@800&family=Comic+Neue:wght@400;700&family=Teko&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Keania+One&family=Monomaniac+One&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@900&family=Bruno+Ace+SC&family=Changa+One&family=Dancing+Script:wght@700&family=Staatliches&display=swap');
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+}
+
+body {
+    background-image: url("image3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    animation-name: bg_animate;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bg_animate {
+    0% {
+        background-size: 300% 100%;
+    }
+
+    100% {
+        background-size: 100% 100%;
+    }
+}
+
+.card {
+    background-color: rgba(173, 176, 204, 0.4);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    height: 80%;
+    width: 400px;
+    margin: auto;
+    margin-top: 75px;
+    border-radius: 10px;
+}
+
+.welcome_text {
+    font-family: 'Dancing Script', cursive;
+    color: white;
+    font-size: 35px;
+}
+
+#logout {
+    float: right;
+    border-radius: 10px 10px 0px 0px;
+    height: 40px;
+    width: 100%;
+    border: solid white 2px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
+.form-control {
+    width: 200px;
+    height: 25px;
+    margin-left: 0;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: black;
+    font-family: 'Comic Neue', cursive;
+    color: black;
+    text-decoration: solid;
+    text-align: center;
+}
+
+.form-control:hover {
+    box-shadow: 0 0 10px white, 0 0 10px white;
+}
+
+.custom-btn {
+    color: #fff;
+    width: 130px;
+    height: 40px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    margin-top: 50px;
+    font-size: 17px;
+}
+
+/* 3 */
+.btn-3 {
+    background: #00aced;
+    box-shadow: 0 0 5px #00aced, 0 0 8px #00aced;
+    line-height: 42px;
+    padding: 0;
+    border: none;
+    z-index: 2;
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.btn-3:hover {
+    background-color: transparent;
+    color: white;
+    box-shadow: 0 5px 3px -3px #00aced, 0 -5px 3px -3px #00aced,
+        0 5px 3px -3px #00aced, 0 -5px 3px -3px #00aced;
+}
+
+.btn-3:before,
+.btn-3:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    width: 100%;
+    height: 50%;
+    right: 0;
+    z-index: -1;
+    background: #00aced;
+    box-shadow: 0 0 5px #00aced;
+    transition: all 0.3s ease;
+}
+
+.btn-3:before {
+    top: 0;
+}
+
+.btn-3:after {
+    bottom: 0;
+}
+
+.btn-3:hover:before,
+.btn-3:hover:after {
+    height: 0;
+    background-color: #00aced;
+}
+
+h3 {
+    font-family: 'Teko', sans-serif;
+    font-size: 50px;
+    color: cyan;
+    width: 90%;
+    margin-left: 5%;
+}
+
+b {
+    color: white;
+}
+
+p {
+    color: greenyellow;
+    font-size: 17px;
+    font-family: 'Black Ops One', cursive;
+}
+
+@media only screen and (max-width: 450px) {
+
+    .card {
+        height: 82%;
+        width: 100%;
+        border-radius: 0px;
+    }
+
+    #logout {
+        border-radius: 0px 0px 0px 0px;
+    }
+
+}
