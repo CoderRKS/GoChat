@@ -161,9 +161,10 @@ p {
 @media only screen and (max-width: 450px) {
 
     .card {
-        height: 82%;
+        height: 100%;
         width: 100%;
         border-radius: 0px;
+        margin-top: 0;
     }
 
     #logout {
