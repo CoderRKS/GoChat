@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Boogaloo&family=Chathura:wght@800&family=Comic+Neue:wght@400;700&family=Teko&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tektur:wght@500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Keania+One&family=Monomaniac+One&family=Nabla&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Stencil+Text:wght@900&family=Bruno+Ace+SC&family=Changa+One&family=Dancing+Script:wght@700&family=Staatliches&display=swap');
 
@@ -66,6 +67,23 @@ body {
     font-size: 17px;
 }
 
+#back{
+    float: left;
+    border-radius: 10px 0px 0px 0px;
+    height: 40px;
+    width: 10%;
+    border: solid white 2px;
+    background-color: rgb(237, 232, 232);
+    color: white;
+    cursor: pointer;
+    background-image: url("image1.png");
+    background-size: 80%;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    font-size: 17px;
+}
+
 .form-control {
     width: 200px;
     height: 25px;
@@ -108,7 +126,8 @@ body {
     border: none;
     z-index: 2;
     -webkit-transition: all 0.3s linear;
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-left: 10px;
     transition: all 0.3s linear;
 }
 
@@ -148,10 +167,11 @@ body {
 }
 
 h3 {
-    font-family: 'Teko', sans-serif;
-    font-size: 50px;
+    font-family: 'Tektur', sans-serif;
+    font-size: 25px;
     color: cyan;
     width: 90%;
+    margin-top: 40px;
     margin-left: 5%;
 }
 
@@ -164,6 +184,64 @@ p {
     font-size: 17px;
     font-family: 'Black Ops One', cursive;
 }
+
+.content_room{
+    height: 54.5%;
+    width: 90%;
+    background-color: rgba(173, 176, 204, 0.4);
+    -webkit-backdrop-filter: blur(50px);
+    backdrop-filter: blur(50px);
+    box-shadow: 5px 5px 10px rgba(155, 133, 252, 0.175),
+        -5px -5px 10px rgba(155, 133, 252, 0.175),
+        -5px 5px 10px rgba(155, 133, 252, 0.175),
+        5px -5px 10px rgba(155, 133, 252, 0.175);
+    margin-left: 5%;
+    border-radius: 10px;
+    overflow-y: scroll;
+    text-align: left;
+}
+
+.room_name{
+    margin-left: 15px;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    color: white;
+    cursor: pointer;
+    text-shadow: 5px 5px 10px rgba(46, 0, 250, 0.175);
+    font-family: 'Tektur', sans-serif;
+    transition: 0.5s;
+}
+
+.room_name:hover{
+    text-shadow: none;
+    color: rgb(188, 245, 249);
+}
+/*scroll bar styling end*/
+::-webkit-scrollbar {
+    width: 5px;
+    border: 0;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+::-webkit-scrollbar-track {
+    border: 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background: blue;
+    border-radius: 5px 5px 5px 5px;
+    transition: 1s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    box-shadow: 5px 5px 15px white,
+        -5px -5px 15px white,
+        -5px 5px 15px white,
+        5px -5px 15px white;
+}
+
+/*scroll bar styling end*/
 
 @media only screen and (max-width: 450px) {
 
@@ -178,4 +256,7 @@ p {
         border-radius: 0px 0px 0px 0px;
     }
 
+    #back{
+        border-radius: 0px 0px 0px 0px;
+    }
 }

@@ -9,21 +9,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style2.css">
-    <title>GoChat-Room</title>
+    <link rel="stylesheet" href="rooms.css">
+    <title>GoChat-Joined Rooms..</title>
 </head>
 
 <body>
     <div class="card">
+        <button onclick="back()" id="back" class="btn_back btn"></button>
         <button onclick="logout()" id="logout" class="glyphicon glyphicon-log-out btn btn-danger"></button>
-        <h1 class="welcome_text" id="user_name" onload="loadwelcom()">Welcome</h1>
-        <h3>Creat or Join a <b>Chat Room</b> for chatting</h3>
-        <div>
-            <p>Room:</p>
-            <input type="text" id="room_name" class="form-control" placeholder="Room">
-        </div>
-        <button onclick="add_room()" id="login_button" class="custom-btn btn-3"><span>Join</span></button><br>
-        <button onclick="enter_room()" id="enter_button" class="custom-btn btn-3"><span>Joined Rooms..</span></button>
+        <button onclick="create_room()" id="login_button" class="custom-btn btn-3"><span>Create Room</span></button>
+        <h3>Following are the <b>Trending Rooms</b> maybe you have joined or created one...</h3>
+        <div class="content_room" id="content_room"></div>
     </div>
     <script src="main2.js"></script>
 </body>

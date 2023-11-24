@@ -1,12 +1,12 @@
 //ADD YOUR FIREBASE LINKS HERE
 const firebaseConfig = {
-    apiKey: "AIzaSyBZ6AJ8Af6n5EZxMI6xQEzbd7LyfcvjneM",
-    authDomain: "gochat-aaa41.firebaseapp.com",
-    databaseURL: "https://gochat-aaa41-default-rtdb.firebaseio.com",
-    projectId: "gochat-aaa41",
-    storageBucket: "gochat-aaa41.appspot.com",
-    messagingSenderId: "603580579263",
-    appId: "1:603580579263:web:84d23e0910c3097c9ef50a"
+    apiKey: "AIzaSyDwkfO-e6uJqY6CXS-zWjmWtCEHS_1MolM",
+    authDomain: "gochat-c5385.firebaseapp.com",
+    databaseURL: "https://gochat-c5385-default-rtdb.firebaseio.com",
+    projectId: "gochat-c5385",
+    storageBucket: "gochat-c5385.appspot.com",
+    messagingSenderId: "509492882170",
+    appId: "1:509492882170:web:6a61f4d5cfac137a1bb743"
   };
 
 // Initialize Firebase
@@ -27,6 +27,10 @@ function send() {
         message: msg,
     });
     document.getElementById("msg").value = "";
+}
+
+function back(){
+    window.location = "index2.html";
 }
 
 function getData() {
@@ -68,6 +72,9 @@ setInterval(() => {
     var AmOrPm = hours >= 12 ? 'PM' : 'AM';
     hours = (hours % 12) || 12;
     var minutes = dt.getMinutes();
+    if(minutes <= 9){
+        minutes = "0" + minutes;
+    }
     var finalTime = hours + ":" + minutes + " " + AmOrPm;
     document.getElementById('timetext').innerHTML = finalTime;
 }, 1000);

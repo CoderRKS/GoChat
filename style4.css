@@ -154,6 +154,19 @@ body {
     float: left;
 }
 
+.btn_back{
+    width: 34px;
+    height: 100%;
+    float: right;
+    background-image: url("image1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    border: 2px solid white;
+    border-left: 4px solid white;
+    cursor: pointer;
+}
+
 .blackcontain {
     background:linear-gradient(90deg,black,black,black,black,black,black, blue);
     color: white;

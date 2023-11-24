@@ -1,12 +1,12 @@
 //ADD YOUR FIREBASE LINKS HERE
 const firebaseConfig = {
-    apiKey: "AIzaSyBZ6AJ8Af6n5EZxMI6xQEzbd7LyfcvjneM",
-    authDomain: "gochat-aaa41.firebaseapp.com",
-    databaseURL: "https://gochat-aaa41-default-rtdb.firebaseio.com",
-    projectId: "gochat-aaa41",
-    storageBucket: "gochat-aaa41.appspot.com",
-    messagingSenderId: "603580579263",
-    appId: "1:603580579263:web:84d23e0910c3097c9ef50a"
+    apiKey: "AIzaSyDwkfO-e6uJqY6CXS-zWjmWtCEHS_1MolM",
+    authDomain: "gochat-c5385.firebaseapp.com",
+    databaseURL: "https://gochat-c5385-default-rtdb.firebaseio.com",
+    projectId: "gochat-c5385",
+    storageBucket: "gochat-c5385.appspot.com",
+    messagingSenderId: "509492882170",
+    appId: "1:509492882170:web:6a61f4d5cfac137a1bb743"
   };
 
 // Initialize Firebase
@@ -51,3 +51,34 @@ document.addEventListener("keyup", function (event) {
         add_room();
     }
 });
+
+function enter_room(){
+    window.location = "rooms.html";
+}
+
+function create_room(){
+    window.location = "index2.html";
+}
+
+function getData() {
+    firebase.database().ref("/").on('value', function (snapshot) {
+          document.getElementById("content_room").innerHTML = ""; snapshot.forEach(function (childSnapshot) {
+                childKey = childSnapshot.key;
+                Room_names = childKey;
+                //Start code
+                row = "<div class = 'room_name' id = " + Room_names + " onclick = ' redirectToRoomName(this.id)'>" + Room_names + "</div>"
+                document.getElementById("content_room").innerHTML += row;
+                //End code
+          });
+    });
+}
+getData();
+
+function redirectToRoomName(name){
+    localStorage.setItem("room_name",name);
+    window.location = "index4.html";
+}
+
+function back(){
+    window.location = "index2.html";
+}
